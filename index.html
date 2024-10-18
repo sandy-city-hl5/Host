@@ -1,34 +1,136 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
-    <title>sandy city</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عنوان الموقع</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <style>
-        h1 {
+        body {
+            background-color: black;
+            color: white;
             text-align: center;
+            overflow: hidden; /* لإخفاء أي محتوى خارج الشاشة أثناء الحركة */
+            display: flex; /* استخدام فليكس لتوسيع المحتوى */
+            flex-direction: column; /* ترتيب العناصر عمودياً */
+            align-items: center; /* توسيط المحتوى أفقياً */
+            height: 100vh; /* ملء الشاشة بالكامل */
+            margin: 0; /* إزالة الهوامش الافتراضية */
+        }
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            font-size: 48px;
+            position: relative;
+            animation: slideDown 2s forwards; /* تطبيق الحركة */
+        }
+
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-100px); /* يبدأ من أعلى الشاشة */
+                opacity: 0; /* يبدأ بالشفافية */
+            }
+            100% {
+                transform: translateY(0); /* ينتهي في موقعه الطبيعي */
+                opacity: 1; /* يصبح مرئيًا */
+            }
+        }
+        p {
+            font-family: 'Roboto', sans-serif; /* استخدام نفس الخط */
+            font-size: 24px; /* حجم خط الرسالة */
+            opacity: 0; /* بداية الرسالة غير مرئية */
+            animation: fadeIn 2s forwards; /* تطبيق حركة جديدة */
+            animation-delay: 2s; /* تأخير ظهور الرسالة حتى انتهاء حركة العنوان */
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0; /* بداية الشفافية */
+            }
+            100% {
+                opacity: 1; /* يصبح مرئيًا */
+            }
         }
     </style>
 </head>
 <body>
-    <h1>sandy city host!</h1>
-    
+    <h1>SANDY HOST</h1>
+    <p>أهلاً بك عزيزي المستخدم، يسعدنا انضمامك إلينا!</p>
 </body>
 </html>
 
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
-    
-  <!DOCTYPE html>
-  <html>
-  <head>
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة على الجانب الأيسر</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* لون خلفية أسود */
+            color: white; /* لون النص أبيض */
+        }
+        .navbar {
+            position: fixed; /* جعل القائمة ثابتة */
+            top: 0;
+            left: 0; /* نقل القائمة إلى اليسار */
+            width: 200px; /* عرض القائمة */
+            height: 100%; /* ملء الشاشة عموديًا */
+            background-color: rgba(255, 255, 255, 0.1); /* خلفية شفافة */
+            padding: 10px 0;
+        }
+        .navbar a {
+            display: block; /* جعل كل رابط في سطر */
+            color: white; /* لون الروابط أبيض */
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s, transform 0.3s; /* تأثير الانتقال */
+        }
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* لون عند التمرير */
+        }
+        .navbar a:active {
+            transform: scale(1.1); /* تكبير عند الضغط */
+        }
+    </style>
+</head>
+<body>
 
-
-    <!DOCTYPE html>
-    <html>
-    <head>
+    <div class="navbar">
+        <a href="#home">الصفحة الرئيسية</a>
+        <a href="https://sandy-city-hl5.github.io/wep-2/">المتجر</a>
+        <a href="https://sandy-city-hl5.github.io/wep-3/">الاخبار</a>
+        <a href="https://sandy-city-hl5.github.io/wep-4/">البلاك ليست</a>
+         <a href="https://sandy-city-hl5.github.io/wep-5/">القوانين</a>
         
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -40,69 +142,43 @@
 
 
 <!DOCTYPE html>
-<html>
-    <!DOCTYPE html>
-    <html>
-    <head>
-    <title>sandy city</title>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة تحتوي على صورة مع حقوق الطبع والنشر</title>
     <style>
-    ul {
-      list-style-type: none; /* لإخفاء النقاط أمام العناصر */
-      margin: 0;
-      padding: 0;
-      overflow: hidden; /* لإخفاء أي جزء يزيد عن العرض */
-      background-color: #333; /* لون رمادي داكن للخلفية */
-    }
-
-    li {
-      float: left; /* لترتيب العناصر أفقيًا */
-    }
-
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    li a:hover {
-      background-color: #111;
-    }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* توسيط العناصر عمودياً */
+            height: 100vh; /* ارتفاع 100% من الشاشة */
+            margin: 0;
+            background-color: #000000; /* لون خلفية أسود */
+            color: white; /* لون النص أبيض */
+        }
+        img {
+            max-width: 100%; /* الحفاظ على عرض الصورة */
+            height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+        }
+        footer {
+            position: absolute; /* جعل حقوق الطبع والنشر ثابتة */
+            bottom: 10px; /* المسافة من الأسفل */
+            left: 50%; /* محاذاة في منتصف الصفحة */
+            transform: translateX(-50%); /* محاذاة في المنتصف */
+            text-align: center; /* محاذاة النص في المنتصف */
+        }
     </style>
-    </head>
-    <body>
+</head>
+<body>
 
-    <ul>
-      <li><a href="https://sandy-city-hl5.github.io/wep-4/">الصفحة الرئسية</a></li>
-        <li><a href="https://sandy-city-hl5.github.io/wep-2/""> المتجر </a>
-      <li><a href="https://sandy-city-hl5.github.io/wep-3/">الاخبار </a></li>
-      <li><a href="https://discord.gg/hl/رابط السيرفر">رابط السيرفر</a></li>
-    </ul>
+    <img src="" alt=""> <!-- استبدل برابط الصورة المطلوب-->
 
-    </body>
-    </html>
+    <footer>
+        &copy; 2024 جميع الحقوق محفوظة. <!-- يمكنك تغيير السنة أو النص -->
+    </footer>
 
-
-      <!DOCTYPE html>
-      <html>
-      <head>
-          <title>sandy city</title>
-          <style>
-              p {
-                  font-size: 50px; /* جعلنا الخط أكبر */
-                  text-align: right;
-              }
-
-          </style>
-      </head>
-      <body>
-          <p>هلا بك في خادمنا المتواضع هنا يمكنك التسوق و رؤية الاخبار</p>
-      </body>
-         
-          
-          
-          
-          
-          <img src="https://cdn.discordapp.com/attachments/1275505795168997417/1294334646691299361/image0.jpg?ex=670aa293&is=67095113&hm=d94f6dd31a6c1505929e9c91318f3954e1a593925cbdd1959050f9b88eadcb54&" alt="وصف الصورة" style="width: 500px; height: auto;">
+</body>
+</html>
 
